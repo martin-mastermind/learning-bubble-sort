@@ -20,7 +20,7 @@ function draw() {
   }
 	
   if(start){
-  for (let n = 0; n < width / 5; n++) {
+  for (let n = 0; n < width / 2; n++) {
   	if(arr[j - 1] > arr[j]){
     	swap(arr, j - 1, j);
   	}
