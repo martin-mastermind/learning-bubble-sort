@@ -1,6 +1,6 @@
 let arr = [],
     i = 0,
-		j = 1,
+    j = 1,
     start = false;
 
 function setup() {
@@ -22,19 +22,19 @@ function draw() {
   if(start){
   for (let n = 0; n < width / 5; n++) {
   	if(arr[j - 1] > arr[j]){
-    	swap(arr, j - 1, j);
+    	    swap(arr, j - 1, j);
   	}
   	j++;
   	if(j >= arr.length){
-    	j = 1;
-    	i++;
+    	    j = 1;
+    	    i++;
   	}
   }
   }
 }
 
 function swap(array, i, j) {
-	let temp = array[i];
+  let temp = array[i];
   array[i] = array[j];
   array[j] = temp;
 }
